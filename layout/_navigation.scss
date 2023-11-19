@@ -1,5 +1,5 @@
 *{
-    font-family:"poppins",sans-serif;
+    font-family:"Poppins",sans-serif;
 }
 section{
     width: 100%;
@@ -60,9 +60,15 @@ section{
     display: flex;
     align-items: center;
     background-image: url(image/ismael-trevino-NDyuR4Huig8-unsplash.png);
+    background-repeat: round;
 
     h2{
         color: $clr-blanc;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
     }
 
     div{
@@ -71,7 +77,7 @@ section{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 40%;
+        width: 35%;
         height: 65vh;
         margin-left: 600px;
         opacity: 85%;
@@ -82,4 +88,210 @@ section{
         background-color: $clr-blanc;
         color: $clr-vert;
     }
+}
+
+.section3{
+    
+    height: 100vh;
+    width: 80%;  
+    margin: auto;
+    margin-top: 50px;
+
+    h2{
+        text-align: center;
+    }
+
+    h3{
+        color: $clr-vert;
+    }
+
+    p{
+        text-align: center;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    > div.grid {
+        
+        gap: 60px;
+
+        > div {
+            
+
+            h3 {
+                color: $clr-vert;
+                
+            }
+
+            p{
+                max-width: 100%;
+                text-align: left;
+                margin-bottom: 10px;
+                
+            }
+
+            .prix{
+                text-align: right;
+                margin-top: -30px;
+                color: $clr-vert;
+            }
+        }
+
+        h2{
+            transform: rotate(-9deg);
+            font-style: italic;
+        }
+
+        .bleu{
+            color: $clr-bleu;
+        }
+
+        button{
+            align-items: center;
+        }
+
+    }
+
+    .droite{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            margin-top: 65px;
+            text-align: center !important;
+        }
+
+        button{
+            margin: 65px;
+        }
+
+    }
+
+}
+
+.section4{
+    @include taille-section;
+    background-image: url(image/louis-hansel-MlPD-AzZYMg-unsplash.png);
+    background-repeat: round;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
+    .vert_bleu{
+        height: 65%;
+        width: 100%;
+        display: flex; 
+        justify-content: space-around; 
+        margin: 25px;
+    }
+
+    .couleur-verte{
+        background-color: rgba($clr-vert, 0.7);
+        width: 49%; 
+        padding: 20px;
+        color: $clr-blanc;
+        
+    }
+
+    .couleur-bleu{
+        background-color: rgba($clr-bleu, 0.7);
+        width: 49%;
+        padding: 20px;
+        color: $clr-blanc;
+    }
+
+    h2{
+        color: $clr-blanc;
+        text-align: center;
+    }
+
+    p {
+        width: 50%;
+        text-align: center;
+    }
+
+    .texte{
+        @include grid;
+        justify-items: center;
+        padding-top: 75px;
+        white-space: nowrap;
+    }
+
+}
+
+.section5{
+    @include taille-section;
+    @include grid;
+    background-image: url(image/61842.png);
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img {
+        
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .rectangle {
+        position: absolute;
+        background-color: $clr-blanc;
+        width: 1%;
+        height: 63.5%;
+        top: 18.25%;
+    }
+
+    .rectangle2 {
+        position: absolute;
+        background-color: $clr-blanc;
+        width: 41.3%;
+        height: 1.5%;
+        top: 49.5%;
+        left: 4.35%;
+
+    }
+
+    .cote_droit{
+        width: 90%;
+    }
+
+    h2{
+        margin-top: 62px;
+        color: $clr-vert;
+    }
+
+    .bordure{
+        color: white !important;
+        border: 1px solid black;
+        padding: 10px
+    }
+
+    .formulaire{
+        @include grid;
+        gap: 5px;
+
+        p{
+            color: $clr-vert;
+            font-size: $clr-23;
+        }
+    }
+
+    .élément_une_colonne{
+        grid-column: span 2;
+    }
+
+    button {
+        grid-column: span 2;
+        justify-self: center;
+        border-radius: 10px;
+        padding: 10px 50px 10px 50px 
+    }
+
+    
 }

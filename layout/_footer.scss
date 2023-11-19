@@ -3,6 +3,17 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 20vh;
+
+    p{
+        color: $clr-blanc;
+        font-size: $clr-18;
+    }
+
+    h3{
+        color: $clr-blanc;
+        font-size: $clr-23;
+    }
+    
 }
 
 .footer {
@@ -13,6 +24,3 @@ footer {
     text-align: center;
 }
 
-.footer-content img {
-    max-width: 100%; /* Ensure the image does not exceed the width of its container */
-}
