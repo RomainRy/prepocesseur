@@ -77,8 +77,8 @@ section{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 35%;
-        height: 65vh;
+        width: 45%;
+        height: 75vh;
         margin-left: 600px;
         opacity: 85%;
         padding: 40px;
@@ -87,6 +87,20 @@ section{
     button{
         background-color: $clr-blanc;
         color: $clr-vert;
+    }
+
+    @media(max-width: 1150px){
+        div{
+            height: 80vh;
+            margin-left: 320px;
+        }
+    }
+
+    @media(max-width: 780px){
+        div{
+            height: 95vh;
+            margin-left: 230px;
+        }
     }
 }
 
@@ -220,6 +234,40 @@ section{
         white-space: nowrap;
     }
 
+    @media (max-width: 950px) {
+        .vert_bleu{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }   
+    }
+
+    @media (max-width: 850px) {
+        .couleur-verte{
+            width: 80%
+        } 
+        
+        .couleur-bleu{
+            width: 80%
+        }  
+    }
+
+    @media (max-width: 575px) {
+
+        height: 150vh;
+        
+        .texte{
+            grid-template-columns: 1fr
+        }  
+    }
+
+    @media (max-width: 475px) {
+
+        height: 175vh;
+        
+         
+    }
+
 }
 
 .section5{
@@ -268,7 +316,7 @@ section{
 
     .bordure{
         color: white !important;
-        border: 1px solid black;
+        border: 1px solid gray;
         padding: 10px
     }
 

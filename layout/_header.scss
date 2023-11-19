@@ -21,6 +21,8 @@ nav{
     ul{
         display: flex;
         gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     li{
@@ -34,13 +36,8 @@ nav{
             &:hover{
                 text-decoration: underline;
             }
-       
         } 
-
-
     }
-
-    
 
     button{
         background-color: $clr-blanc;
@@ -48,6 +45,14 @@ nav{
         border: 1px solid white;
         padding: 10px;
         border-radius: 7px;
+    }
+
+    @media (max-width: 950px){
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
 }
 
@@ -88,10 +93,24 @@ header{
         gap: 20px;
 
         .icone img {
-            width: 30px; /* Ajustez la largeur selon vos besoins */
+            width: 30px; 
             height: auto;
         }
     }
+
+    @media(max-width: 800px){
+        h1{
+            font-size: 88px;
+        }
+    }
+
+    @media(max-width: 450px){
+        h1{
+            font-size: 64px;
+        }
+    }
+
+    
 }
 
 

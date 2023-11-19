@@ -19,6 +19,13 @@ footer h3 {
   color: white;
   font-size: 23px;
 }
+@media (max-width: 810px) {
+  footer {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 70vh;
+  }
+}
 
 .footer {
   display: flex;
@@ -54,6 +61,8 @@ nav {
 nav ul {
   display: flex;
   gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 nav li {
   list-style: none;
@@ -72,6 +81,15 @@ nav button {
   border: 1px solid white;
   padding: 10px;
   border-radius: 7px;
+}
+@media (max-width: 950px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
 header h1 {
@@ -106,8 +124,18 @@ header .icone {
   gap: 20px;
 }
 header .icone .icone img {
-  width: 30px; /* Ajustez la largeur selon vos besoins */
+  width: 30px;
   height: auto;
+}
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 88px;
+  }
+}
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 64px;
+  }
 }
 
 * {
@@ -179,8 +207,8 @@ section button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 35%;
-  height: 65vh;
+  width: 45%;
+  height: 75vh;
   margin-left: 600px;
   opacity: 85%;
   padding: 40px;
@@ -188,6 +216,18 @@ section button {
 .section2 button {
   background-color: white;
   color: #B2D234;
+}
+@media (max-width: 1150px) {
+  .section2 div {
+    height: 80vh;
+    margin-left: 320px;
+  }
+}
+@media (max-width: 780px) {
+  .section2 div {
+    height: 95vh;
+    margin-left: 230px;
+  }
 }
 
 .section3 {
@@ -291,6 +331,34 @@ section button {
   padding-top: 75px;
   white-space: nowrap;
 }
+@media (max-width: 950px) {
+  .section4 .vert_bleu {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .section4 .couleur-verte {
+    width: 80%;
+  }
+  .section4 .couleur-bleu {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .section4 {
+    height: 150vh;
+  }
+  .section4 .texte {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 475px) {
+  .section4 {
+    height: 175vh;
+  }
+}
 
 .section5 {
   width: 100%;
@@ -332,7 +400,7 @@ section button {
 }
 .section5 .bordure {
   color: white !important;
-  border: 1px solid black;
+  border: 1px solid gray;
   padding: 10px;
 }
 .section5 .formulaire {
